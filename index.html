@@ -1,0 +1,538 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/normalize.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="./css/style.css">
+     <title>Dream House</title>
+ </head>
+ <body>
+    <header class="header">
+
+        <div class="header__top">
+
+            <div class="header__top-left"> <!-- header__logo-and-menu -->
+
+                <div class="logo">
+
+                    <svg width="61" height="29" viewBox="0 0 61 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0814 12.68L8.76895 0.524902H6.36058L2.13049 12.3095C1.41003 14.3473 1.07039 14.7178 0 14.9134V15.4177H4.12717V14.9134C2.71714 14.6973 2.5113 14.2444 3.11854 12.3506L3.78753 10.3231H8.39843L9.16006 12.5874C9.71584 14.2753 9.45853 14.7178 8.15142 14.9134V15.4177H15.0678V14.9134C14.0283 14.7178 13.668 14.3267 13.0814 12.68ZM4.01396 9.60262L6.06211 3.32438L8.16171 9.60262H4.01396Z" fill="#FD665E"/>
+                        <path d="M19.0826 5.05347L14.5334 5.60925V6.08269L15.0583 6.24736C15.6244 6.44292 15.717 6.58701 15.717 7.256V13.8018C15.717 14.5223 15.5523 14.7487 14.5334 14.9134V15.4177H20.4205V14.9134C19.2884 14.7281 19.1031 14.512 19.1031 13.6989V8.3058C19.556 7.88382 20.5955 7.61623 21.6144 7.61623C22.2011 7.61623 22.798 7.70886 23.0965 7.82207C23.22 7.57506 23.3332 7.14279 23.3332 6.70022C23.3332 5.77392 22.8907 5.03289 21.9644 5.03289C20.9249 5.03289 20.0603 5.90772 19.0723 7.95587L19.0826 5.05347Z" fill="#FD665E"/>
+                        <path d="M28.6448 15.6236C30.4974 15.6236 32.0413 14.9134 32.8029 13.8224V13.3181C32.2883 13.8224 31.3929 14.1621 30.3945 14.1621C28.3464 14.1621 26.6893 12.5462 26.6893 9.71584C26.6893 7.35892 27.9244 5.85626 29.7873 5.85626C30.3431 5.85626 30.8371 5.99006 31.2282 6.23707C31.2076 6.22678 31.1973 6.22678 31.1767 6.22678C30.3842 6.22678 29.7358 6.88548 29.7358 7.71915C29.7358 8.55282 30.4048 9.21152 31.2488 9.21152C32.0721 9.21152 32.7617 8.56311 32.7617 7.6574C32.7617 6.17532 31.3517 4.99172 28.8713 4.99172C25.5983 4.99172 23.19 7.17366 23.19 10.3231C23.19 13.5857 25.6086 15.6236 28.6448 15.6236Z" fill="#FD665E"/>
+                        <path d="M37.5278 0L32.9581 0.555779V1.02922L33.483 1.20419C34.0594 1.39974 34.1417 1.54383 34.1417 2.21282V13.7813C34.1417 14.5223 33.9564 14.7384 32.9581 14.9134V15.4177H38.557V14.9134C37.6616 14.7487 37.5278 14.5635 37.5278 13.843V7.36921C37.8366 6.79285 38.485 6.40175 39.329 6.40175C40.492 6.40175 41.1713 7.09132 41.1713 8.47048V13.843C41.1713 14.5635 41.0169 14.759 40.142 14.9134V15.4177H45.741V14.9134C44.7221 14.7384 44.5471 14.5223 44.5471 13.7813V8.27493C44.5471 6.05181 43.1371 4.99172 41.0478 4.99172C39.3084 4.99172 38.0424 5.78422 37.5072 6.94723L37.5278 0Z" fill="#FD665E"/>
+                        <path d="M14.1792 17.4318L9.63 17.9875V18.461L10.1549 18.6256C10.7313 18.8212 10.8136 18.9653 10.8136 19.6343V26.1595C10.8136 26.9006 10.6283 27.1167 9.63 27.2917V27.796H15.229V27.2917C14.3335 27.1373 14.1997 26.9417 14.1997 26.2213V19.7475C14.5085 19.1814 15.0952 18.78 15.9288 18.78C17.0095 18.78 17.627 19.4593 17.627 20.8282V26.2213C17.627 26.9417 17.5035 27.1373 16.6081 27.2917V27.796H22.0424V27.2917C21.147 27.1373 21.0132 26.9417 21.0132 26.2213V20.4782C21.0132 20.1901 20.9926 19.943 20.9411 19.696C21.2602 19.1403 21.8777 18.78 22.7114 18.78C23.8024 18.78 24.4405 19.4593 24.4405 20.8282V26.2213C24.4405 26.9417 24.3067 27.127 23.4113 27.2917V27.796H29.0102V27.2917C28.0016 27.1167 27.8266 26.9006 27.8266 26.1595V20.6326C27.8266 18.461 26.4783 17.37 24.4302 17.37C22.7114 17.37 21.3837 18.1934 20.8794 19.3564C20.5089 18.0699 19.2944 17.37 17.6785 17.37C15.9288 17.37 14.6732 18.1934 14.1792 19.3461V17.4318Z" fill="#FD665E"/>
+                        <path d="M35.0011 28.0018C38.3152 28.0018 40.7956 25.7993 40.7956 22.6396C40.7956 19.4181 38.3358 17.37 35.0423 17.37C31.7385 17.37 29.258 19.5622 29.258 22.7219C29.258 25.9537 31.7179 28.0018 35.0011 28.0018ZM35.0731 27.3226C33.694 27.3226 32.8397 25.5523 32.8397 22.6087C32.8397 19.7681 33.5808 18.0493 34.9805 18.0493C36.3494 18.0493 37.2036 19.8093 37.2036 22.7528C37.2036 25.5935 36.4626 27.3226 35.0731 27.3226Z" fill="#FD665E"/>
+                        <path d="M41.7536 19.7681L44.8413 27.8166H46.6939L49.6374 20.1901C50.2755 18.533 50.5637 18.2448 51.3871 18.0802V17.5656H47.9495V18.0802C49.1125 18.2448 49.2463 18.5742 48.7626 20.1077L47.1364 24.9862L45.5103 20.0871C45.0368 18.5742 45.1706 18.2345 46.3645 18.0802V17.5656H40.1789V18.0802C40.992 18.2551 41.2699 18.5433 41.7536 19.7681Z" fill="#FD665E"/>
+                        <path d="M50.5851 22.7014C50.5851 25.9743 53.0038 28.0018 56.0709 28.0018C57.9852 28.0018 59.5496 27.3123 60.301 26.1801L60.2907 25.6758C59.7761 26.2007 58.9115 26.5815 57.9029 26.5815C55.8239 26.5815 54.2903 25.0686 54.0227 22.3926H60.4348C60.4554 22.2176 60.4862 21.95 60.4862 21.6824C60.4862 19.13 58.7777 17.37 55.9268 17.37C52.7156 17.37 50.5851 19.5725 50.5851 22.7014ZM53.9713 21.5075C53.9713 19.2946 54.6814 18.0493 55.9268 18.0493C57.0178 18.0493 57.5118 19.2226 57.5118 21.0546C57.5118 21.3531 57.5118 21.5692 57.5015 21.7648L53.9816 21.8059C53.9713 21.703 53.9713 21.6104 53.9713 21.5075Z" fill="#FD665E"/>
+                    </svg>  
+
+                </div>
+
+                <div class="header__menu">
+
+                    <ul class="navigation">
+
+                        <li>
+                            <a class="navigation__item" href="#">Design Gallery</a>
+                        </li>
+    
+                        <li>
+                            <a class="navigation__item" href="#">List of Architect</a>
+                        </li>
+    
+                        <li>
+                            <a class="navigation__item" href="#">Articles</a>
+                        </li>
+                        <li>
+                            <a class="navigation__item" href="#">How it Works</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            
+            </div>
+
+            <div class="header__top-right">   <!-- header__search-and-login -->
+
+                <div class="header__search">
+
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.9891 14.0205L10.424 9.45547C11.1324 8.53965 11.5156 7.41992 11.5156 6.24219C11.5156 4.83242 10.9654 3.51055 9.97051 2.51387C8.97559 1.51719 7.6502 0.96875 6.24219 0.96875C4.83418 0.96875 3.50879 1.51895 2.51387 2.51387C1.51719 3.50879 0.96875 4.83242 0.96875 6.24219C0.96875 7.6502 1.51895 8.97559 2.51387 9.97051C3.50879 10.9672 4.83242 11.5156 6.24219 11.5156C7.41992 11.5156 8.53789 11.1324 9.45371 10.4258L14.0188 14.9891C14.0321 15.0025 14.048 15.0131 14.0655 15.0203C14.083 15.0276 14.1018 15.0313 14.1207 15.0313C14.1396 15.0313 14.1584 15.0276 14.1759 15.0203C14.1934 15.0131 14.2093 15.0025 14.2227 14.9891L14.9891 14.2244C15.0025 14.211 15.0131 14.1951 15.0203 14.1776C15.0276 14.1601 15.0313 14.1414 15.0313 14.1225C15.0313 14.1035 15.0276 14.0848 15.0203 14.0673C15.0131 14.0498 15.0025 14.0339 14.9891 14.0205ZM9.02656 9.02656C8.28125 9.77012 7.29336 10.1797 6.24219 10.1797C5.19102 10.1797 4.20313 9.77012 3.45781 9.02656C2.71426 8.28125 2.30469 7.29336 2.30469 6.24219C2.30469 5.19102 2.71426 4.20137 3.45781 3.45781C4.20313 2.71426 5.19102 2.30469 6.24219 2.30469C7.29336 2.30469 8.28301 2.7125 9.02656 3.45781C9.77012 4.20313 10.1797 5.19102 10.1797 6.24219C10.1797 7.29336 9.77012 8.28301 9.02656 9.02656Z" fill="#585858"/>
+                    </svg>   
+
+                </div>
+
+                <a class="header__sign-in" href="#">Sign In</a> <!-- header__btn-login -->
+
+                <div class="header__btn">
+                    <a class="header__sign-in header__sign-in--active" href="#">Sign Up</a> <!-- header__btn-login--active -->
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-content">
+
+            <div class="header-content__title-wrapper">
+                
+                <h1 class="title-h1">
+                    Build Your Dream <span class="title-h1--red">House</span>
+                </h1>
+
+            </div>
+
+            <div class="header-content__wrapper-inner">
+
+                <div class="header-content__subtitle-and-btn">
+
+                    <div class="header-content__subtitle-wrapper">
+                
+                        <div class="subtitle">
+                            The first and most trusted marketplace of design & build house in The World. 100% guaranteed Build safe, comfortable and transparent with a project management for the best result
+                        </div>
+        
+                    </div>
+        
+                    <div class="header-content__btn-wrapper">
+                        
+                        <button class="btn">Free Consultation</button>
+                
+                    </div>
+
+                </div>
+    
+                <div class="header-content__img">
+                    <img src="./img/Rectangle-1.png" alt="">
+                </div>
+
+            </div>
+        
+        </div>
+
+    </header>
+
+
+
+    <div class="container">
+
+        <section class="bulid-room">
+
+            <div class="bulid-room__title-h2-wrapper">
+    
+                <h2 class="title-h2">Build professional valuable room for you</h2>
+    
+            </div>
+    
+            <div class="photo-slider-buttons"> 
+
+                <div class="slider-buttons"> 
+
+                    <button class="photo-slider-btn-prev slider-buttons--style">
+                    
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="arrow" d="M16 8V6H4L8 2L7 0L0 7L7 14L8 12L4 8H16Z" fill="#473534"/>
+                        </svg>
+                            
+                            
+                    </button>
+        
+                    <button class="photo-slider-btn-next slider-buttons--style">
+                        
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="arrow" d="M0 8V6H12L8 2L9 0L16 7L9 14L8 12L12 8H0Z" fill="#473534"/>
+                        </svg>
+                            
+                            
+                    </button>
+
+                </div>
+    
+            </div>    
+    
+        </section>
+
+        <div class="image-slider swiper-container">
+
+            <div class="image-slider__wrapper swiper-wrapper">
+                
+                <div class="image-slider__slide swiper-slide">
+    
+                    <div class="image-slider_image">
+    
+                        <img src="./img/img-01.png" alt="">
+    
+                    </div>
+    
+                </div>
+    
+                <div class="image-slider__slide swiper-slide">
+    
+                    <div class="image-slider_image">
+    
+                        <img src="./img/img-02.png" alt="">
+    
+                    </div>
+    
+                </div>
+    
+                <div class="image-slider__slide swiper-slide">
+    
+                    <div class="image-slider_image">
+    
+                        <img src="./img/img-03.png" alt="">
+    
+                    </div>
+    
+                </div>
+    
+                <div class="image-slider__slide swiper-slide">
+    
+                    <div class="image-slider_image">
+    
+                        <img src="./img/img-04.png" alt="">
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+
+    </div>
+
+    <section class="your-needs">
+
+        <div class="your-needs__title-h2-wrapper">
+    
+            <h2 class="title-h2">Build your needs with Archmove</h2>
+
+        </div>
+
+        <div class="your-needs__img-and-info">
+
+            <div class="your-needs__img">
+
+                <img src="./img/img-5.png" alt="">
+
+            </div>
+
+            <div class="skills">
+
+                <div class="skill">
+    
+                    <div class="skill__icon">
+                    
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.6239 4.35639L52.8748 17.994C51.1284 32.4277 43.3962 45.4887 31.5344 53.9614L30.6066 54.6242L29.6273 53.9247C17.8481 45.511 10.3572 32.3774 9.0857 17.9972L30.6239 4.35639Z" stroke="black" stroke-width="4"/>
+                            <path d="M24.5 26.8995L29.508 31.9075L39.4075 22.008" stroke="#FD665E" stroke-width="4"/>
+                        </svg>
+                            
+                    </div>
+    
+                    <div class="skill__text">
+                    
+                        <h3 class="skill__title">
+                            100% guaranteed project completion
+                        </h3>
+                        
+                        <div class="skill__subtitle">
+                        
+                            Build safe, comfortable and transparent 
+                            with a project management application 
+                            with a joint account.
+                        
+                        </div>
+                    
+                    </div>
+    
+                </div>
+    
+                <div class="skill">
+    
+                    <div class="skill__icon">
+                    
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 4H48V48H13V4Z" stroke="black" stroke-width="4"/>
+                            <path d="M34.2542 40V38.7661C37.3077 38.5017 39 36.9153 39 34.3301C39 32.1267 37.7676 30.7656 35.3487 30.2661L34.2542 30.0507V27.0052C35.0452 27.1423 35.6246 27.818 35.6522 28.5916H38.7425C38.7149 26.2609 36.9858 24.6158 34.2542 24.3416V23H32.9298V24.3318C29.959 24.5668 28.2483 26.1532 28.2483 28.6895C28.2483 30.8341 29.4808 32.2442 31.8353 32.7926L32.9298 33.0472V36.2005C31.9457 36.0927 31.2375 35.4171 31.1915 34.5553H28C28.0092 37.0622 29.8211 38.6192 32.9298 38.7857V40H34.2542ZM35.8545 34.7316C35.8545 35.5639 35.2567 36.1221 34.2542 36.2005V33.2823C35.3303 33.4977 35.8545 33.9775 35.8545 34.7316ZM31.4766 28.3566C31.4766 27.6025 32.0744 27.0444 32.9298 26.9856V29.7667C31.9824 29.5611 31.4766 29.0714 31.4766 28.3566Z" fill="#FD665E"/>
+                        </svg>            
+                            
+                    </div>
+    
+                    <div class="skill__text">
+                    
+                        <h3 class="skill__title">
+                            No additional fees
+                        </h3>
+                        
+                        <div class="skill__subtitle">
+                        
+                            There are no hidden costs. The value of 
+                            the offer you get is the value you paid.
+                        
+                        </div>
+                    
+                    </div>
+    
+                </div>
+    
+                <div class="skill">
+    
+                    <div class="skill__icon">
+                    
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.5324 6.62508L49 21.9397V55H13V21.9097L30.5324 6.62508Z" stroke="black" stroke-width="4"/>
+                            <circle cx="31" cy="28" r="5" stroke="#FD665E" stroke-width="4"/>
+                        </svg>
+                              
+                    </div>
+    
+                    <div class="skill__text">
+                    
+                        <h3 class="skill__title">
+                            Get escort from the Team
+                        </h3>
+                        
+                        <div class="skill__subtitle">
+                        
+                            Monitor reports from the Arsitag team who 
+                            check directly in the field.
+                        
+                        </div>
+                    
+                    </div>
+    
+                </div>
+
+                <div class="skills__btn-wrapper">
+                        
+                    <button class="btn btn--uppercase-text">Free Consultation</button>
+                
+                </div>
+
+    
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="gary-wrpper">
+  
+        <div class="reviews"> 
+
+            <div class="reviews__title-h2-wrapper">
+        
+                <h2 class="title-h2">Sound Too Good To Be True?</h2>
+    
+            </div>
+
+            <div class="quote-slider swiper-container">
+                
+                <div class="quote-slider__wrapper swiper-wrapper">
+    
+                    <div class="quote-slider__slide swiper-slide">
+        
+                        <div class="quote-slider__quote">
+        
+                            <div class="txt">
+                                We just wanted to thank you for this fantastic website! 
+                                We are so grateful for being able to advertise our Petite 
+                                cabin and receive feedback from people from all over 
+                                the U.S. and even further.
+                            </div>
+    
+                            <div class="author">
+                                <span class="author__name">Adam Morph</span> — CEO Alfatech
+                            </div>
+    
+                        </div> 
+        
+                    </div>
+    
+                    
+                    <div class="quote-slider__slide swiper-slide">
+        
+                        <div class="quote-slider__quote">
+        
+                            <div class="txt">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+    
+                            <div class="author">
+                                <span class="author__name">Adam Morph</span> — CEO Alfatech
+                            </div>
+        
+                        </div>
+        
+                    </div>
+    
+    
+                    
+                    <div class="quote-slider__slide swiper-slide">
+        
+                        <div class="quote-slider__quote">
+        
+                            <div class="txt">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime.
+                            </div>
+    
+                            <div class="author">
+                                <span class="author__name">Adam Morph</span> — CEO Alfatech
+                            </div>
+        
+                        </div>
+        
+                    </div>
+    
+                </div>
+    
+                <div class="qoote-slider-buttons"> 
+    
+                    <div class="slider-buttons"> 
+        
+                        <button class="qoote-slider-btn-prev slider-buttons--style">
+                        
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="arrow" d="M16 8V6H4L8 2L7 0L0 7L7 14L8 12L4 8H16Z" fill="#473534"/>
+                            </svg>                          
+                                
+                        </button>
+            
+                        <button class="qoote-slider-btn-next slider-buttons--style">
+                            
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="arrow" d="M0 8V6H12L8 2L9 0L16 7L9 14L8 12L12 8H0Z" fill="#473534"/>
+                            </svg>
+                                
+                        </button>
+        
+                    </div>
+        
+                </div> 
+    
+            </div>
+    
+        </div> 
+
+        <section class="offer">
+
+            <div class="offer__img">
+
+                <img src="./img/home.png" alt="">
+
+            </div>
+
+            <div class="offer__title-and-btn">
+
+                
+                <div class="offer__title-wrapper">
+                    
+                    <h1 class="title-h1 title-h1--small">
+                        Realize your dream project with <span class="title-h1--red">Archmove</span>
+                    </h1>
+                    
+                </div>
+
+                <button class="btn btn--uppercase-text">Free Consultation</button>
+
+            </div>
+    
+        </section>
+    
+
+    </div>
+
+    <section class="partners">
+
+        <div class="partners__title-h2-wrapper">
+    
+            <h2 class="title-h2">Our Partners</h2>
+
+        </div>
+
+        <div class="partners_icon">
+
+            <a href="">
+                <img class="partners__item" src="./img/logo-1.png" alt="">
+            </a>
+
+            <a href="">
+                <img class="partners__item" src="./img/logo-2.png" alt="">
+            </a>
+
+            <a href="">
+                <img class="partners__item" src="./img/logo-3.png" alt="">
+            </a>
+
+            <a href="">
+                <img class="partners__item" src="./img/logo-4.png" alt="">
+            </a>
+
+            <a href="">
+                <img class="partners__item" src="./img/logo-5.png" alt="">
+            </a>
+
+        </div>
+
+    </section>
+
+    <div class="separator"></div>
+
+    <footer class="footer">
+
+        <div class="footer__menu">
+
+            <ul class="navigation navigation--padding-zero">
+
+                <li>
+                    <a class="navigation__item navigation__item--footer" href="#">About Us</a>
+                </li>
+
+                <li>
+                    <a class="navigation__item navigation__item--footer" href="#">How it Works</a>
+                </li>
+
+                <li>
+                    <a class="navigation__item navigation__item--footer" href="#">FAQ</a>
+                </li>
+                <li>
+                    <a class="navigation__item navigation__item--footer" href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a class="navigation__item navigation__item--footer" href="#">Privacy Policy</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="logo">
+
+            <svg width="61" height="29" viewBox="0 0 61 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0814 12.68L8.76895 0.524902H6.36058L2.13049 12.3095C1.41003 14.3473 1.07039 14.7178 0 14.9134V15.4177H4.12717V14.9134C2.71714 14.6973 2.5113 14.2444 3.11854 12.3506L3.78753 10.3231H8.39843L9.16006 12.5874C9.71584 14.2753 9.45853 14.7178 8.15142 14.9134V15.4177H15.0678V14.9134C14.0283 14.7178 13.668 14.3267 13.0814 12.68ZM4.01396 9.60262L6.06211 3.32438L8.16171 9.60262H4.01396Z" fill="#FD665E"/>
+                <path d="M19.0826 5.05347L14.5334 5.60925V6.08269L15.0583 6.24736C15.6244 6.44292 15.717 6.58701 15.717 7.256V13.8018C15.717 14.5223 15.5523 14.7487 14.5334 14.9134V15.4177H20.4205V14.9134C19.2884 14.7281 19.1031 14.512 19.1031 13.6989V8.3058C19.556 7.88382 20.5955 7.61623 21.6144 7.61623C22.2011 7.61623 22.798 7.70886 23.0965 7.82207C23.22 7.57506 23.3332 7.14279 23.3332 6.70022C23.3332 5.77392 22.8907 5.03289 21.9644 5.03289C20.9249 5.03289 20.0603 5.90772 19.0723 7.95587L19.0826 5.05347Z" fill="#FD665E"/>
+                <path d="M28.6448 15.6236C30.4974 15.6236 32.0413 14.9134 32.8029 13.8224V13.3181C32.2883 13.8224 31.3929 14.1621 30.3945 14.1621C28.3464 14.1621 26.6893 12.5462 26.6893 9.71584C26.6893 7.35892 27.9244 5.85626 29.7873 5.85626C30.3431 5.85626 30.8371 5.99006 31.2282 6.23707C31.2076 6.22678 31.1973 6.22678 31.1767 6.22678C30.3842 6.22678 29.7358 6.88548 29.7358 7.71915C29.7358 8.55282 30.4048 9.21152 31.2488 9.21152C32.0721 9.21152 32.7617 8.56311 32.7617 7.6574C32.7617 6.17532 31.3517 4.99172 28.8713 4.99172C25.5983 4.99172 23.19 7.17366 23.19 10.3231C23.19 13.5857 25.6086 15.6236 28.6448 15.6236Z" fill="#FD665E"/>
+                <path d="M37.5278 0L32.9581 0.555779V1.02922L33.483 1.20419C34.0594 1.39974 34.1417 1.54383 34.1417 2.21282V13.7813C34.1417 14.5223 33.9564 14.7384 32.9581 14.9134V15.4177H38.557V14.9134C37.6616 14.7487 37.5278 14.5635 37.5278 13.843V7.36921C37.8366 6.79285 38.485 6.40175 39.329 6.40175C40.492 6.40175 41.1713 7.09132 41.1713 8.47048V13.843C41.1713 14.5635 41.0169 14.759 40.142 14.9134V15.4177H45.741V14.9134C44.7221 14.7384 44.5471 14.5223 44.5471 13.7813V8.27493C44.5471 6.05181 43.1371 4.99172 41.0478 4.99172C39.3084 4.99172 38.0424 5.78422 37.5072 6.94723L37.5278 0Z" fill="#FD665E"/>
+                <path d="M14.1792 17.4318L9.63 17.9875V18.461L10.1549 18.6256C10.7313 18.8212 10.8136 18.9653 10.8136 19.6343V26.1595C10.8136 26.9006 10.6283 27.1167 9.63 27.2917V27.796H15.229V27.2917C14.3335 27.1373 14.1997 26.9417 14.1997 26.2213V19.7475C14.5085 19.1814 15.0952 18.78 15.9288 18.78C17.0095 18.78 17.627 19.4593 17.627 20.8282V26.2213C17.627 26.9417 17.5035 27.1373 16.6081 27.2917V27.796H22.0424V27.2917C21.147 27.1373 21.0132 26.9417 21.0132 26.2213V20.4782C21.0132 20.1901 20.9926 19.943 20.9411 19.696C21.2602 19.1403 21.8777 18.78 22.7114 18.78C23.8024 18.78 24.4405 19.4593 24.4405 20.8282V26.2213C24.4405 26.9417 24.3067 27.127 23.4113 27.2917V27.796H29.0102V27.2917C28.0016 27.1167 27.8266 26.9006 27.8266 26.1595V20.6326C27.8266 18.461 26.4783 17.37 24.4302 17.37C22.7114 17.37 21.3837 18.1934 20.8794 19.3564C20.5089 18.0699 19.2944 17.37 17.6785 17.37C15.9288 17.37 14.6732 18.1934 14.1792 19.3461V17.4318Z" fill="#FD665E"/>
+                <path d="M35.0011 28.0018C38.3152 28.0018 40.7956 25.7993 40.7956 22.6396C40.7956 19.4181 38.3358 17.37 35.0423 17.37C31.7385 17.37 29.258 19.5622 29.258 22.7219C29.258 25.9537 31.7179 28.0018 35.0011 28.0018ZM35.0731 27.3226C33.694 27.3226 32.8397 25.5523 32.8397 22.6087C32.8397 19.7681 33.5808 18.0493 34.9805 18.0493C36.3494 18.0493 37.2036 19.8093 37.2036 22.7528C37.2036 25.5935 36.4626 27.3226 35.0731 27.3226Z" fill="#FD665E"/>
+                <path d="M41.7536 19.7681L44.8413 27.8166H46.6939L49.6374 20.1901C50.2755 18.533 50.5637 18.2448 51.3871 18.0802V17.5656H47.9495V18.0802C49.1125 18.2448 49.2463 18.5742 48.7626 20.1077L47.1364 24.9862L45.5103 20.0871C45.0368 18.5742 45.1706 18.2345 46.3645 18.0802V17.5656H40.1789V18.0802C40.992 18.2551 41.2699 18.5433 41.7536 19.7681Z" fill="#FD665E"/>
+                <path d="M50.5851 22.7014C50.5851 25.9743 53.0038 28.0018 56.0709 28.0018C57.9852 28.0018 59.5496 27.3123 60.301 26.1801L60.2907 25.6758C59.7761 26.2007 58.9115 26.5815 57.9029 26.5815C55.8239 26.5815 54.2903 25.0686 54.0227 22.3926H60.4348C60.4554 22.2176 60.4862 21.95 60.4862 21.6824C60.4862 19.13 58.7777 17.37 55.9268 17.37C52.7156 17.37 50.5851 19.5725 50.5851 22.7014ZM53.9713 21.5075C53.9713 19.2946 54.6814 18.0493 55.9268 18.0493C57.0178 18.0493 57.5118 19.2226 57.5118 21.0546C57.5118 21.3531 57.5118 21.5692 57.5015 21.7648L53.9816 21.8059C53.9713 21.703 53.9713 21.6104 53.9713 21.5075Z" fill="#FD665E"/>
+            </svg>  
+
+        </div>
+
+    </footer>
+      
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+   
+</body>
+</html>                   
